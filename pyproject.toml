@@ -6,7 +6,7 @@ authors = ["Sal"]
 
 [tool.poetry.dependencies]
 python = "==3.8.10"
-manimgl = "^1.3.0" # 3 versions exist (see below)
+manimgl = "==1.3.0" # 3 versions exist (see below)
 # https://docs.manim.community/en/stable/installation/versions.html?highlight=OpenGL#which-version-to-use
 
 

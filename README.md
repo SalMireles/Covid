@@ -2,14 +2,15 @@
 
 ## Simulator for coronavirus spread
 
-
+## Running the Simulator
+###### https://3b1b.github.io/manim/getting_started/quickstart.html
+0. `manimgl covid.py IntroducePlot` or `manimgl covid.py <name of animation>`
 
 ## Using Poetry
 
 0. `make install` to install all dependencies
 0. `poetry shell`
-0. hack away or just run using `python covid.py`
-0. `poetry exit`
+0. `poetry exit` when you are finished
 
 ### Adding Python Dependencies
 
@@ -23,6 +24,7 @@
 ### Mac (M1)
 
  * Install [brew](https://brew.sh/)
+ * Install some [manin dependencies](https://azarzadavila-manim.readthedocs.io/en/latest/installation/mac.html)
 
  * Install cairo
    ```bash
@@ -37,6 +39,11 @@
  * Install ffmpeg
    ```bash
    brew install ffmpeg
+   ```
+
+ * Install latex (MacTeX)
+   ```bash
+   brew install mactex
    ```
 
 <h2> :books: Refrences</h2>

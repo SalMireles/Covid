@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/Users/salvadormireles/Desktop/github/Covid')
 from manim_imports_ext import *
 import scipy.stats
 
@@ -77,9 +79,9 @@ class IntroducePlot(Scene):
 
         # Rescale y axis
         origin = axes.c2p(0, 0)
-        axes.y_axis.tick_marks.save_state()
-        for tick in axes.y_axis.tick_marks:
-            tick.match_width(axes.y_axis.tick_marks[0])
+        axes.y_axis.ticks.save_state()
+        for tick in axes.y_axis.ticks:
+            tick.match_width(axes.y_axis.ticks[0])
         axes.y_axis.add(
             axes.h_lines,
             axes.small_h_lines,
@@ -846,7 +848,7 @@ class RescaleToLogarithmic(IntroducePlot):
             "1B",
         ]
         log_y_labels = VGroup()
-        for text, tick in zip(labels_text, log_y_axis.tick_marks[1:]):
+        for text, tick in zip(labels_text, log_y_axis.ticks[1:]):
             label = TexText(text)
             label.set_height(0.25)
             always(label.next_to, tick, LEFT, SMALL_BUFF)
@@ -876,7 +878,7 @@ class RescaleToLogarithmic(IntroducePlot):
         log_h_lines.set_stroke(WHITE, 0.5, opacity=0.5)
         log_h_lines[4::5].set_stroke(WHITE, 1, opacity=1)
 
-        movers = [dots, axes.y_axis.tick_marks, axes.h_lines, log_h_lines]
+        movers = [dots, axes.y_axis.ticks, axes.h_lines, log_h_lines]
         for group in movers:
             group.generate_target()
             for mob in group.target:
@@ -890,17 +892,17 @@ class RescaleToLogarithmic(IntroducePlot):
 
         self.add(log_y_axis)
         log_y_axis.save_state()
-        log_y_axis.tick_marks.set_opacity(0)
+        log_y_axis.ticks.set_opacity(0)
         log_h_lines.set_opacity(0)
         self.wait()
         self.add(log_h_lines, title, logarithm_title)
         self.play(
             MoveToTarget(dots),
-            MoveToTarget(axes.y_axis.tick_marks),
+            MoveToTarget(axes.y_axis.ticks),
             MoveToTarget(axes.h_lines),
             MoveToTarget(log_h_lines),
             VFadeOut(axes.y_labels),
-            VFadeOut(axes.y_axis.tick_marks),
+            VFadeOut(axes.y_axis.ticks),
             VFadeOut(axes.h_lines),
             Restore(log_y_labels),
             FadeIn(logarithm_title),
@@ -911,7 +913,7 @@ class RescaleToLogarithmic(IntroducePlot):
 
         # Walk up y axis
         brace = Brace(
-            log_y_axis.tick_marks[1:3],
+            log_y_axis.ticks[1:3],
             RIGHT,
             buff=SMALL_BUFF,
         )
@@ -930,7 +932,7 @@ class RescaleToLogarithmic(IntroducePlot):
         for i in range(2, 5):
             self.play(
                 brace.next_to,
-                log_y_axis.tick_marks[i:i + 2],
+                log_y_axis.ticks[i:i + 2],
                 {"buff": SMALL_BUFF}
             )
             self.wait(0.5)

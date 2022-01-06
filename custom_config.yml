@@ -1,0 +1,22 @@
+directories:
+  mirror_module_path: True
+  output: "/Users/salvadormireles/Desktop/github/Covid/videos"
+  raster_images: "/Users/salvadormireles/Desktop/github/Covid/images/raster"
+  vector_images: "/Users/salvadormireles/Desktop/github/Covid/images/vector"
+  pi_creature_images: "/Users/salvadormireles/Desktop/github/Covid/images/pi_creature/svg"
+  sounds: "/Users/salvadormireles/Desktop/github/Covid/sounds"
+  data: "/Users/salvadormireles/Desktop/github/Covid/data"
+  temporary_storage: "/Users/salvadormireles/Desktop/github/Covid/manim_cache"
+universal_import_line: "from manim_imports_ext import *"
+# tex:
+#   executable: "xelatex -no-pdf"
+#   template_file: "ctex_template.tex"
+#   intermediate_filetype: "xdv"
+style:
+  font: "CMU Serif"
+  background_color: "#000000"
+camera_qualities:
+  default_quality: "ultra_high"
+window_position: UR
+window_monitor: 0
+full_screen: False
