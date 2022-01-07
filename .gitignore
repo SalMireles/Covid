@@ -1,3 +1,2 @@
-**/__pycache__
 .DS_Store
-manim_cache/**
+__pycache__/*
