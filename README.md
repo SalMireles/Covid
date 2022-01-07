@@ -3,8 +3,7 @@
 ## Simulator for coronavirus spread
 
 ## Running the Simulator
-###### https://3b1b.github.io/manim/getting_started/quickstart.html
-0. `manimgl covid.py IntroducePlot` or `manimgl covid.py <name of animation>`
+0. within poetry shell (see below) run `python sir.py`
 
 ## Using Poetry
 
@@ -22,33 +21,11 @@
 ## Setup
 
 ### Mac (M1)
-
- * Install [brew](https://brew.sh/)
- * Install some [manin dependencies](https://azarzadavila-manim.readthedocs.io/en/latest/installation/mac.html)
-
- * Install cairo
-   ```bash
-   brew install cairo
-   ```
-
- * Install pangocairo
-   ```bash
-   brew install pango
-   ```
-
- * Install ffmpeg
-   ```bash
-   brew install ffmpeg
-   ```
-
- * Install latex (MacTeX)
-   ```bash
-   brew install mactex
-   ```
+0. TBD
 
 <h2> :books: Refrences</h2>
 <ul>
-  <li><p>Grant Sanderson, Covid git repo</p>
-      <p>Available: https://github.com/3b1b/videos/blob/master/_2020/covid.py</p>
+  <li><p>Greg Winther, Youtube SIR tutorial repo</p>
+      <p>Available: https://www.youtube.com/watch?v=mwJXjxMTwAw</p>
   </li>
 </ul>
