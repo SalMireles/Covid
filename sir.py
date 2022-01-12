@@ -2,10 +2,8 @@
 
 SIR disease model
 
-Youtube References:
+Youtube Reference:
 Part 1/2: https://www.youtube.com/watch?v=mwJXjxMTwAw
-Part 2/2: https://www.youtube.com/watch?v=MJlKfaU206Q&t=0s
-
 
 S' = -beta*S*I, susceptible people in contact with infected people
 I' = beta*S*I - nu*I, + infected people recovering
